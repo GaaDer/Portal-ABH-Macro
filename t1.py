@@ -52,7 +52,7 @@ def dibujar_mando(ventana):
     pygame.draw.circle(ventana, (0, 255, 255), (int(lx), int(ly)), 15)
 
     # 2. Botones A, B, X, Y
-    pos_botones = [(300, 150), (330, 180), (300, 210), (270, 180)]
+    pos_botones = [(300, 210), (330, 180), (300, 150), (270, 180)]
     for i, b in enumerate(BOTONES[:4]):
         color = (0, 255, 0) if estado.get(b, 0) > 0 else (100, 100, 100)
         pygame.draw.circle(ventana, color, pos_botones[i], 15)
